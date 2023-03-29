@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/Four_Maven/controller" />
+    <file type="web" url="file://$PROJECT_DIR$/Y_Maven" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Spring6/SPring6-001-revelation/pom.xml" />
+        <option value="$PROJECT_DIR$/Y_Maven/pom.xml" />
+        <option value="$PROJECT_DIR$/WF_maven/pom.xml" />
+        <option value="$PROJECT_DIR$/spring3-2/pom.xml" />
+        <option value="$PROJECT_DIR$/Four_Maven/pom.xml" />
+        <option value="$PROJECT_DIR$/spring3-23/pom.xml" />
+        <option value="$PROJECT_DIR$/spring3-24/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring3-27/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring3-28/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring3-24HW/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring3-28-2/pom.xml" />
+        <option value="$PROJECT_DIR$/Mybaties_maven/pom.xml" />
+        <option value="$PROJECT_DIR$/Mybaties_maven03/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring3-28-HM/pom.xml" />
+        <option value="$PROJECT_DIR$/YtlDemo/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK" />
+</project>

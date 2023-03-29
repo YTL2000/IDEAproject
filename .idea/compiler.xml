@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/Four_Maven/dao/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/Four_Maven/service/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/Four_Maven/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Spring3-28" />
+        <module name="Spring3-28-HW" />
+        <module name="spring3-24" />
+        <module name="spring3-23" />
+        <module name="spring3-24HW" />
+        <module name="spring3-27" />
+        <module name="Mybaties_maven" />
+        <module name="spring3-2" />
+        <module name="Spring3-28-2" />
+        <module name="YtlDemo" />
+        <module name="Mybaties_maven03" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dao" target="17" />
+      <module name="Four_Maven" target="17" />
+      <module name="service" target="17" />
+      <module name="Spring3-28-HM" target="17" />
+      <module name="SPring6-001-revelation" target="17" />
+      <module name="view" target="17" />
+      <module name="WF_maven" target="17" />
+      <module name="Y_Maven" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

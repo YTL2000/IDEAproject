@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Four_Maven/controller/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Four_Maven/controller/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Four_Maven/dao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Four_Maven/dao/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Four_Maven/service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Four_Maven/service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Four_Maven/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Four_Maven/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Mybaties_maven/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Mybaties_maven/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Mybaties_maven03/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Mybaties_maven03/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring3-24HW/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring3-24HW/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring3-27/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring3-27/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring3-28-2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring3-28-2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring3-28-HM/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring3-28-HM/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring3-28/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring3-28/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring6/SPring6-001-revelation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring6/SPring6-001-revelation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WF_maven/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WF_maven/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Y_Maven/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Y_Maven/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YtlDemo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YtlDemo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring3-2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring3-2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring3-23/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring3-23/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring3-24/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring3-24/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
