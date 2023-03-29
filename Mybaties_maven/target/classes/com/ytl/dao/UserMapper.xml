@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 定义了一个标签：mapper:映射的含义；在这里表示映射的sql语句；
+    namespace:随便起名，第一次，起了abc；
+    问题
+        1.：namespace:起名，太随意了；
+            编码：好的习惯；见名知意
+        2.mybatis:作用是最项目的Sql进行解耦操作；项目有很多的接口UserDao接口，和我们目前的xml，没有关系；
+-->
+<mapper namespace="com.ytl.dao.UserDao">
+    <!--
+        select： 代表的是查询语句；insert:标签；插入语句；update:更新语句;delete:删除语句;
+            标签可以发送select  sql
+        id: select标签的唯一标识   ?
+        resultType: 查询返回的结果  结构类型表示查询完毕之后返回的结构类型；
+    -->
+<!--作用：把重复的sql语句抽出来来放到sql标签中，然后通<include refid="" />来引入-->
+    <sql id="sqlxing">
+        id,name,pwd
+    </sql>
+    <sql id="sqlNamePwd">
+        name,pwd
+    </sql>
+<!--    将结果准换成实体类对象  数据库列跟实体类属性一一对应-->
+    <resultMap id="UserMap" type="User">
+        <id column="id" property="id"></id>
+        <result column="name" property="uname"></result>
+        <result column="pwd" property="upwd"></result>
+    </resultMap>
+    <select id="selectById" resultMap="UserMap">
+        select <include refid="sqlxing"/> from t_user
+        --     动态sql判断语句
+        <if test="name!=null and name!=''">
+            where name like #{name}
+        </if>
+    </select>
+    <!-- 根据id来查询用户信息，查询是一个用户;mybatis里面的参数：#{列名}   -->
+    <select id="selectUserById" resultType="com.ytl.pojo.User">
+        select * from t_user where id=#{id}
+    </select>
+    <!--添加用户-->
+    <insert id="addUser" parameterType="User">
+        insert t_user(<include refid="sqlNamePwd"/>) values(#{name},#{pwd})
+    </insert>
+    <!--具体参数添加用户-->
+    <insert id="insertStringUser">
+        insert t_user(name,pwd) values(#{name},#{pwd})
+    </insert>
+    <!--根据id删除数据-->
+    <delete id="deleteUser" parameterType="java.lang.Integer">
+        delete from t_user where id=#{id}
+    </delete>
+    <!--根据id修改数据-->
+    <update id="updateUser" parameterType="com.ytl.pojo.User">
+        update  t_user set name=#{name},pwd=#{pwd} where id=#{id}
+    </update>
+    <!--根据名字模糊查询-->
+    <select id="selectNameUser" resultType="com.ytl.pojo.User" parameterType="String">
+        select * from t_user where name like #{name}
+    </select>
+    <!--分页查询-->
+    <select id="selectLimitUser" resultType="com.ytl.pojo.User" >
+        select * from t_user limit 0,3
+    </select>
+    <!--查询总记录数-->
+    <select id="countLimitUser" resultType="java.lang.Integer">
+        select count(id) from t_user
+    </select>
+
+</mapper>

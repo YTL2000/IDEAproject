@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--1.引入context命名空间和约束xsd ,复制;  -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- context:报灰色; -->
+    <!--    后续会有很多的bean,不光实体类;实现类也可以接口,由Spring容器托管,帮助开发者自行创建bean
+        50个实体;*3=150
+        2.context:上下文;component:组件; scan:扫描;base-package:基础包;   完毕之后:前面变绿色+放大镜(查找)
+          加完注解之后,就不需要在xml文件里面,写又臭又长的xml配置了;
+        *
+    -->
+    <bean id="p2" class="com.ytl.entity.Product">
+        <property name="id" value="666"/>
+        <property name="pnum" value="2023-1-1"/>
+        <property name="pname" value="辣条"/>
+    </bean>
+</beans>

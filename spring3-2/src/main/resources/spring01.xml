@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 第一种无参构造-->
+    <bean id="p1" class="com.ytl.entity.Product"/>
+    <!-- 第二种实现类-->
+    <bean name="productDao" class="com.ytl.dao.ProductDaoImpl"/>
+    <!-- 第三种工厂-->
+    <bean id="Factory" class="com.ytl.factory.ProductFactory"/>
+    <bean id="FactoryDemo" factory-bean="Factory" factory-method="factory01"/>
+    <!-- 第四种工厂的静态方法-->
+    <bean id="FactoryStaticDemo" class="com.ytl.factory.ProductFactory" factory-method="factory02"/>
+</beans>

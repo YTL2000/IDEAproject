@@ -1,0 +1,45 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--&lt;!&ndash;1.添加spring.xml，注意头文件，要全面；&ndash;&gt;-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--       xmlns:aop="http://www.springframework.org/schema/aop"-->
+<!--       xmlns:tx="http://www.springframework.org/schema/tx"-->
+<!--       xmlns:context="http://www.springframework.org/schema/context"-->
+<!--       xsi:schemaLocation="-->
+<!--          http://www.springframework.org/schema/beans-->
+<!--          http://www.springframework.org/schema/beans/spring-beans-2.0.xsd-->
+<!--          http://www.springframework.org/schema/aop-->
+<!--          http://www.springframework.org/schema/aop/spring-aop-2.0.xsd-->
+<!--          http://www.springframework.org/schema/tx-->
+<!--          http://www.springframework.org/schema/tx/spring-tx-2.0.xsd-->
+<!--          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">-->
+<!--    <context:annotation-config></context:annotation-config>-->
+<!--    <context:component-scan base-package="com.ytl"/>-->
+<!--    <context:property-placeholder location="classpath:jdbc.properties"/>-->
+<!--    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">-->
+<!--        <property name="driverClassName" value="${jdbc.driverClassName}"/>-->
+<!--        <property name="url" value="${jdbc.url}"/>-->
+<!--        <property name="username" value="${jdbc.username}"/>-->
+<!--        <property name="password" value="${jdbc.password}"/>-->
+<!--    </bean>-->
+<!--&lt;!&ndash;    配置jdbcTemplate&ndash;&gt;-->
+<!--    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">-->
+<!--        <property name="dataSource" ref="dataSource"/>-->
+<!--    </bean>-->
+<!--&lt;!&ndash;    配置druid连接&ndash;&gt;-->
+<!--    <bean id="trans" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+<!--        <property name="dataSource" ref="dataSource"/>-->
+<!--    </bean>-->
+<!--&lt;!&ndash;    配置事务&ndash;&gt;-->
+<!--    <tx:advice id="advice" transaction-manager="trans">-->
+<!--        <tx:attributes>-->
+<!--&lt;!&ndash;            作用域的某个方法&ndash;&gt;-->
+<!--            <tx:method name="transferMoney"/>-->
+<!--        </tx:attributes>-->
+<!--    </tx:advice>-->
+<!--    <aop:config>-->
+<!--&lt;!&ndash;        事务切入点&ndash;&gt;-->
+<!--        <aop:pointcut id="jp" expression="execution(* com.ytl.service.Impl.TransferMoneyImpl.transferMoney(..))"/>-->
+<!--&lt;!&ndash;        切面类事务 aop起了一个专有的切面名，advisor&ndash;&gt;-->
+<!--        <aop:advisor advice-ref="advice" pointcut-ref="jp"/>-->
+<!--    </aop:config>-->
+<!--</beans>-->

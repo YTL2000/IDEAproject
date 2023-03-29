@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+<!--    创建人物-->
+    <context:component-scan base-package="com.ytl"/>
+    <aop:aspectj-autoproxy/>
+<bean id="Guanyu" class="com.ytl.entity.Role">
+    <property name="name" value="关羽"/>
+    <property name="horse" value="摩托"/>
+</bean>
+<bean id="ZhangFei" class="com.ytl.entity.Role">
+    <property name="name" value="张飞"/>
+    <property name="horse" value="自行车"/>
+</bean>
+    <!--创建武器-->
+    <bean name="zf" class="com.ytl.dao.ZBSMIWeaponImpl"/>
+    <bean name="gy" class="com.ytl.dao.QLDIWeaponImpl"/>
+
+</beans>

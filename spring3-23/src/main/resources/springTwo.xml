@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--1.引入context命名空间和约束xsd ,复制;  -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean id="collection" class="com.ytl.entity.Coll">
+        <property name="list">
+            <list>
+                <value>张三</value>
+                <value>张三</value>
+                <value>张三</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="1" value="马报国"/>
+                <entry key="1" value="马云"/>
+                <entry key="1" value="马化腾"/>
+            </map>
+        </property>
+        <property name="set">
+            <set>
+                <value>春</value>
+                <value>夏</value>
+                <value>秋</value>
+                <value>冬</value>
+            </set>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="username">root</prop>
+                <prop key="password">123456</prop>
+            </props>
+        </property>
+    </bean>
+<context:component-scan base-package="com.ytl.entity"/>
+</beans>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration     PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--配置；-->
+<configuration>
+    <!--引入外部jdbc.properties文件-->
+<!--    <properties resource="jdbc.properties"/>-->
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <typeAliases>
+<!--        &lt;!&ndash;方式一：指定具体的实体类&ndash;&gt;-->
+<!--        <typeAlias type="cn.yanqi.pojo.User" alias="User"/>-->
+        <!--方式二：扫描pojo包下所有实体类，类别名不区别大小写。建议大家直接写类名即可-->
+        <package name="com.ytl.pojo"/>
+    </typeAliases>
+    <!--开启驼峰匹配-->
+
+    <!--连接数据库,环境变量的意思;s:表示可以配置多个数据库的环境变量；10-18；mysql-->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/account"/>
+                <property name="username" value="root"/>
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- 映射mysql的集合，下面可以放很多的sqlmapper.xml    -->
+    <mappers>
+        <mapper resource="com/ytl/dao/UserMapper.xml"/>
+    </mappers>
+</configuration>
